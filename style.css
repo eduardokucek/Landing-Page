@@ -1,0 +1,491 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 125%;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-family: "Lora", serif;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 480px;
+  width: 100%;
+  border-bottom-left-radius: 30% 20px;
+  border-bottom-right-radius: 30% 20px;
+  background-color: #24083c;
+}
+
+.header {
+  padding: 2rem;
+  color: #fff;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+
+.header .navbar h2 {
+  display: flex;
+}
+
+.header .navbar p {
+  font-weight: 400;
+}
+
+.header .navbar p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header .navbar div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.header .navbar div span {
+  height: 3px;
+  width: 132px;
+  background-color: #43ffa1;
+}
+
+.phoneimg {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 360px;
+  height: 11rem;
+}
+
+.container .section {
+  margin-bottom: 4rem;
+}
+
+.container .section .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.container .section .title h1 #sectionunderlined {
+  background-color: transparent;
+  font-family: "Lora", serif;
+  text-decoration: underline #43ffa1;
+  color: #fff;
+}
+
+.container .section h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.container .section span {
+  height: 50px;
+  width: 120px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  background-color: #4dfda1;
+  color: #24053e;
+}
+
+.container .section .informations {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 38px;
+  padding: 14rem 2rem 6rem 2rem;
+  gap: 1rem;
+  z-index: -2;
+  border-bottom-left-radius: 30% 20px;
+  border-bottom-right-radius: 30% 20px;
+  background-color: #fbf8ff;
+}
+
+.container .section .informations div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .section .informations span {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background-color: #fbf8ff;
+}
+
+.container .div-ceo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container .div-ceo .user-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: #43ffa1;
+  margin-bottom: -50px;
+  background-image: url("./IMG_9516.PNG");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 68%;
+}
+
+.container .div-ceo .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #24053e;
+  color: #fff;
+}
+
+.container .div-ceo .user-info p {
+  line-height: 200%;
+}
+
+.container .div-ceo .user-info span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+  width: 168px;
+  background-color: #4dfda1;
+  color: #24053e;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+  font-family: "Poppins", serif;
+  background-color: #fff;
+}
+
+.footer h1 {
+  display: flex;
+  color: #24053e;
+}
+
+.footer p {
+  font-weight: 400;
+  color: #24053e;
+}
+
+.footer div {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer div img {
+  width: 20px;
+}
+
+/* dispositivos móveis */
+@media (min-width: 51px) and (max-width: 320px) {
+  .background {
+    height: 550px;
+  }
+
+  .phoneimg {
+    position: absolute;
+    top: 480px;
+
+    height: 11rem;
+  }
+}
+
+/* dispositivos móveis */
+@media (min-width: 321px) and (max-width: 480px) {
+  .phoneimg {
+    top: 400px;
+  }
+}
+
+/* iPads e tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .phoneimg {
+    top: 360px;
+    height: 16rem;
+  }
+
+  .container .section .informations {
+    margin-top: 120px;
+  }
+
+  .container .section .informations div {
+    flex-direction: row;
+  }
+
+  .container .section .informations div div {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 1rem;
+  }
+
+  .container .section .informations div div p {
+    line-height: 150%;
+  }
+
+  .container .section .informations span {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .container .div-ceo {
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 170px;
+    padding: 3rem;
+  }
+
+  .container .div-ceo .user-info {
+    align-items: flex-start;
+    height: 380px;
+    width: 500px;
+    padding: 3rem;
+    margin-top: 50px;
+  }
+
+  .container .div-ceo .user-img {
+    position: absolute;
+    top: -78px;
+    left: 24px;
+    z-index: -1;
+  }
+}
+
+/* telas pequenas, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header .navbar {
+    padding: 0 3rem;
+  }
+
+  .background {
+    height: 450px;
+  }
+
+  .phoneimg {
+    top: 320px;
+    height: 18rem;
+  }
+
+  .container .section .informations {
+    margin-top: 130px;
+  }
+
+  .container .section .informations div {
+    flex-direction: row;
+  }
+
+  .container .section .informations div div {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 1rem;
+  }
+
+  .container .section .informations div div p {
+    line-height: 150%;
+  }
+
+  .container .section .informations span {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .container .div-ceo {
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 170px;
+    padding: 3rem;
+    margin-right: 60px;
+  }
+
+  .container .div-ceo .user-info {
+    align-items: flex-start;
+    height: 380px;
+    width: 500px;
+    padding: 3rem;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .container .div-ceo .user-img {
+    position: absolute;
+    top: -78px;
+    left: 120px;
+    z-index: -1;
+  }
+}
+
+/* desktops, telas grandes */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .header .navbar {
+    padding: 0 6rem;
+  }
+
+  .background {
+    height: 450px;
+  }
+
+  .phoneimg {
+    top: 320px;
+    height: 18rem;
+  }
+
+  .container .section .informations {
+    margin-top: 130px;
+  }
+
+  .container .section .informations div {
+    flex-direction: row;
+  }
+
+  .container .section .informations div div {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 1rem;
+  }
+
+  .container .section .informations div div p {
+    line-height: 150%;
+  }
+
+  .container .section .informations span {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .container .div-ceo {
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 170px;
+    padding: 3rem;
+  }
+
+  .container .div-ceo .user-info {
+    align-items: flex-start;
+    height: 380px;
+    width: 500px;
+    padding: 3rem;
+    margin: 50px 110px;
+    justify-content: end;
+  }
+
+  .container .div-ceo .user-img {
+    position: absolute;
+    top: -78px;
+    left: 200px;
+    z-index: -1;
+  }
+}
+
+/* telas muito grandes, TVs */
+@media (min-width: 1201px) and (max-width: 2560px) {
+  .header .navbar {
+    padding: 0 8rem;
+  }
+
+  .background {
+    height: 450px;
+  }
+
+  .phoneimg {
+    top: 320px;
+    height: 18rem;
+  }
+
+  .container .section .informations {
+    margin-top: 130px;
+  }
+
+  .container .section .informations div {
+    flex-direction: row;
+  }
+
+  .container .section .informations div div {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-right: 1rem;
+  }
+
+  .container .section .informations div div p {
+    line-height: 150%;
+  }
+
+  .container .section .informations span {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .container .div-ceo {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 170px;
+    padding: 3rem;
+  }
+
+  .container .div-ceo .user-info {
+    align-items: flex-start;
+    height: 380px;
+    width: 500px;
+    padding: 3rem;
+    margin: 50px 160px;
+  }
+
+  .container .div-ceo .user-img {
+    position: absolute;
+    top: -78px;
+    left: 500px;
+    height: 20rem;
+    width: 20rem;
+    z-index: -1;
+  }
+}
